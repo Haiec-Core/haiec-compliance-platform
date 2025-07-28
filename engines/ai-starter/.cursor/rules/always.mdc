@@ -1,0 +1,10 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+If the request starts with "plan:", create a detailed step by step plan on how to do the request, no need to make any code changes.
+
+If the request is "apply", then implement the plan that was previously created.
+
+If the request starts with "apply migrations", run "pnpm supabase migrations up" and then generate types using `pnpm generate:types:local`

@@ -1,0 +1,46 @@
+name: Test Postgres Migrations
+
+on:
+  push:
+    branches:
+      - projects-with-optional-teams
+      - main
+      - v2
+  pull_request:
+
+jobs:
+  test-migrations:
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: test_db
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Postgres client
+        run: sudo apt-get -yqq install postgresql-client
+
+      - name: Apply migrations
+        run: |
+          export PGPASSWORD=postgres
+          for migration in ./supabase/migrations/*.sql; do
+            psql -h localhost -U postgres -d test_db -a -f "$migration"
+          done
+
+      # Add your custom tests or commands to verify the migrations here.
+      # - name: Run tests
+      #   run: your-test-command

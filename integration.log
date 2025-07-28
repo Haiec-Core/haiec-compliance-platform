@@ -1,0 +1,30 @@
+Integration started at Mon Jul 21 15:47:42 UTC 2025
+Copying /workspaces/nextbase-v3/app/(auth) → /workspaces/haiec-compliance-platform/haiec-portal/app/(auth)
+cp: cannot stat '/workspaces/nextbase-v3/app/(auth)/*': No such file or directory
+Copying /workspaces/nextbase-v3/app/settings → /workspaces/haiec-compliance-platform/haiec-portal/app/settings
+cp: cannot stat '/workspaces/nextbase-v3/app/settings/*': No such file or directory
+Copying /workspaces/nextbase-v3/app/admin → /workspaces/haiec-compliance-platform/haiec-portal/app/admin
+cp: cannot stat '/workspaces/nextbase-v3/app/admin/*': No such file or directory
+Copying /workspaces/nextbase-v3/app/billing → /workspaces/haiec-compliance-platform/haiec-portal/app/billing
+cp: cannot stat '/workspaces/nextbase-v3/app/billing/*': No such file or directory
+Copying /workspaces/nextbase-v3/components/ui → /workspaces/haiec-compliance-platform/haiec-portal/components/ui
+cp: cannot stat '/workspaces/nextbase-v3/components/ui/*': No such file or directory
+Copying /workspaces/nextbase-v3/components/layout → /workspaces/haiec-compliance-platform/haiec-portal/components/layout
+cp: cannot stat '/workspaces/nextbase-v3/components/layout/*': No such file or directory
+Copying file /workspaces/nextbase-v3/lib/auth.ts → /workspaces/haiec-compliance-platform/haiec-portal/lib/auth.ts
+cp: cannot stat '/workspaces/nextbase-v3/lib/auth.ts': No such file or directory
+Copying file /workspaces/nextbase-v3/lib/stripe.ts → /workspaces/haiec-compliance-platform/haiec-portal/lib/stripe.ts
+cp: cannot stat '/workspaces/nextbase-v3/lib/stripe.ts': No such file or directory
+Copying file /workspaces/nextbase-v3/middleware.ts → /workspaces/haiec-compliance-platform/haiec-portal/middleware.ts
+cp: cannot stat '/workspaces/nextbase-v3/middleware.ts': No such file or directory
+Copying file /workspaces/nextbase-v3/next.config.js → /workspaces/haiec-compliance-platform/haiec-portal/next.config.js
+cp: cannot stat '/workspaces/nextbase-v3/next.config.js': No such file or directory
+Copying file /workspaces/nextbase-v3/tailwind.config.js → /workspaces/haiec-compliance-platform/haiec-portal/tailwind.config.js
+cp: cannot stat '/workspaces/nextbase-v3/tailwind.config.js': No such file or directory
+Copying file /workspaces/nextbase-v3/.env.example → /workspaces/haiec-compliance-platform/haiec-portal/.env.example
+cp: cannot stat '/workspaces/nextbase-v3/.env.example': No such file or directory
+Copying file /workspaces/nextbase-v3/prisma/schema.prisma → /workspaces/haiec-compliance-platform/haiec-portal/prisma/schema.prisma
+cp: cannot stat '/workspaces/nextbase-v3/prisma/schema.prisma': No such file or directory
+Copying /workspaces/nextbase-v3/public → /workspaces/haiec-compliance-platform/haiec-portal/public
+cp: cannot stat '/workspaces/nextbase-v3/public/*': No such file or directory
+Integration completed at Mon Jul 21 15:47:42 UTC 2025

@@ -1,0 +1,22 @@
+
+{
+  "name": "HAIEC Codespace",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:18",
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "postCreateCommand": "chmod +x ./scripts/integrate_nextbase.sh && ./scripts/integrate_nextbase.sh || echo 'Integration script skipped'",
+  "customizations": {
+    "vscode": {
+      "settings": {},
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint"
+      ]
+    }
+  },
+  "mounts": [
+    "source=nextbase-v3,target=/workspaces/nextbase-v3,type=bind,consistency=cached"
+  ],
+  "remoteUser": "node"
+}

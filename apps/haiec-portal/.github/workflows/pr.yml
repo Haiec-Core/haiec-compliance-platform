@@ -1,0 +1,35 @@
+name: Node CI Pull request
+concurrency:
+  group: pr-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+on:
+  pull_request:
+    branches:
+      - '**'
+
+jobs:
+  vitest:
+    timeout-minutes: 20
+
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/ci-setup
+      - name: test
+        run: pnpm run test
+
+  # playwright:
+  #   timeout-minutes: 20
+
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: ./.github/actions/ci-setup
+  #     - uses: supabase/setup-cli@v1
+  #       with:
+  #         version: latest
+  #     - run: supabase start
+  #     - name: Install playwright browsers
+  #       run: pnpm exec playwright install --with-deps
+  #     - name: Run e2e tests
+  #       run: pnpm run test:e2e

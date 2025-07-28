@@ -1,0 +1,13 @@
+Final integration started at Mon Jul 21 04:14:21 PM UTC 2025
+Skipping /workspaces/nextbase-teams-only-ultimate/app/teams (not found)
+Skipping /workspaces/nextbase-teams-only-ultimate/app/roles (not found)
+Skipping /workspaces/nextbase-component-kit/components (not found)
+Skipping /workspaces/nextbase-component-kit/hooks (not found)
+Skipping /workspaces/nextbase-component-kit/lib/utils.ts (not found)
+Skipping /workspaces/nextbase-ai-starter/app/ai (not found)
+Skipping /workspaces/nextbase-ai-starter/lib/ai (not found)
+Skipping /workspaces/nextbase-ai-starter/lib/aiClient.ts (not found)
+Skipping /workspaces/nextbase-landing-kit/app (not found)
+Skipping /workspaces/nextbase-landing-kit/public (not found)
+Skipping /workspaces/bias-engine (not found)
+Final integration completed at Mon Jul 21 04:14:21 PM UTC 2025

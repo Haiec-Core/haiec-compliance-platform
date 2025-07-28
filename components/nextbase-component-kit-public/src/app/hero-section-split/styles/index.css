@@ -1,0 +1,6 @@
+/* Custom styles for Hero Section Split */
+
+.hero-gradient {
+  @apply bg-gradient-to-br from-background via-background/70 to-muted/50;
+}
+

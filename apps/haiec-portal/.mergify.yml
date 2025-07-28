@@ -1,0 +1,60 @@
+pull_request_rules:
+  - name: Label renovate PRs
+    conditions:
+      - author=renovate[bot]
+    actions:
+      label:
+        add: ['dependency']
+  - name: Automatic merge on approval
+    conditions:
+      - '#approved-reviews-by>=1'
+      - check-success=test-migrations
+      - check-success=vitest
+      - check-success="Vercel"
+    actions:
+      queue:
+        name: default
+        method: squash
+  - name: Automatic merge for hotfixes
+    conditions:
+      - label=hotfix
+      - check-success=test-migrations
+      - check-success=vitest
+      - check-success="Vercel"
+    actions:
+      review:
+        type: APPROVE
+      queue:
+        name: hotfix
+        method: squash
+  - name: Automatic merge for Renovate PRs
+    conditions:
+      - author=renovate[bot]
+      - check-success=test-migrations
+      - check-success=vitest
+      - check-success="Vercel"
+    actions:
+      review:
+        type: APPROVE
+      queue:
+        name: renovate
+        method: squash
+queue_rules:
+  - name: default
+    merge_conditions:
+      - check-success=test-migrations
+      - check-success=vitest
+      - check-success="Vercel"
+      - '#approved-reviews-by>=1'
+  - name: hotfix
+    merge_conditions:
+      - check-success=test-migrations
+      - check-success=vitest
+      - check-success="Vercel"
+      - '#approved-reviews-by>=1'
+  - name: renovate
+    merge_conditions:
+      - check-success=test-migrations
+      - check-success=vitest
+      - check-success="Vercel"
+      - '#approved-reviews-by>=1'

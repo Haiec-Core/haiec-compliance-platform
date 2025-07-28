@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  :root {
+    --primary-lighter-hex: #f0abfc;
+    --primary-lighter: 240 171 252;
+    --primary-light-hex: #e879f9;
+    --primary-light: 232 121 249;
+    --primary-main-hex: #701a75;
+    --primary-main: 112 26 117;
+    --primary: 217 70 239;
+    --primary-dark-hex: #c026d3;
+    --primary-dark: 192 38 211;
+    --primary-darker-hex: #701a75;
+    --primary-darker: 112 26 117;
+
+    --secondary-lighter-hex: #7dd3fc;
+    --secondary-lighter: 125 211 252;
+    --secondary-light-hex: #38bdf8;
+    --secondary-light: 56 189 248;
+    --secondary-main-hex: #0ea5e9;
+    --secondary-main: 14 165 233;
+    --secondary-dark-hex: #0284c7;
+    --secondary-dark: 2 132 199;
+    --secondary-darker-hex: #0369a1;
+    --secondary-darker: 3 105 161;
+
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --hard-shadow: 0px 29px 52px 0px rgba(0, 0, 0, 0.4),
+      22px 25px 16px 0px rgba(0, 0, 0, 0.2);
+    --hard-shadow-left: 0px 29px 52px 0px rgba(0, 0, 0, 0.4),
+      -22px 25px 16px 0px rgba(0, 0, 0, 0.2);
+
+    --text: 0 0% 100%;
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 355.7 100% 97.3%;
+
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --text: 0 0% 0%;
+    --background: 20 14.3% 4.1%;
+    --foreground: 0 0% 95%;
+    --card: 24 9.8% 10%;
+    --card-foreground: 0 0% 95%;
+    --popover: 0 0% 9%;
+    --popover-foreground: 0 0% 95%;
+    --primary-foreground: 144.9 80.4% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 12 6.5% 15.1%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 85.7% 97.3%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  .bg-brand-gradient {
+    background-image: linear-gradient(54deg,
+        var(--primary-light-hex) var(--fancy-y) var(--fancy-y),
+        var(--secondary-light-hex) var(--fancy-x) var(--fancy-x));
+  }
+}

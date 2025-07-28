@@ -1,0 +1,22 @@
+
+HAIEC REPO SETUP GUIDE – Converting Boilerplate SaaS to HAIEC Unified System
+
+STEP 0: Create a Copy of the Original Boilerplate SaaS Code
+- Clone original boilerplate SaaS repo locally
+- Rename folder to haiec-compliance-platform
+- Zip and archive a clean untouched copy (boilerplate_backup.zip)
+- Remove .git and re-init fresh if needed:
+  rm -rf .git
+  git init
+  git remote add origin https://github.com/haiec/haiec-compliance-platform.git
+
+STEP 1: Define Unified File Structure with Comments
+- See README.md for full tree
+
+STEP 2: Assign Which Files Came from Boilerplate
+- Marked in README.md
+
+STEP 3: Usage Guidelines for Team
+- Use components/ui/ for reusable base UI
+- Add all new audit tools under app/audit/<module>
+- Keep Python engines self-contained and testable
