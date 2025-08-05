@@ -1,0 +1,150 @@
+---
+title: "Hello world"
+summary: "This is my first post!"
+---
+
+export const metadata = {
+  openGraph: {
+    images: [
+      {
+        url: "https://nextjs.org/og.png", // Must be an absolute URL
+        width: 800,
+        height: 600,
+      },
+    ],
+  },
+};
+
+## Components
+
+Nextbase ultimate comes with Fumadocs built in. Which means you can use all the components and features that Fumadocs provides including the following:
+
+- Banner
+- Image with zoom
+- Folder view
+- Code blocks
+- Text
+- Callouts
+- Accordion
+- Tabs
+- ... and more!
+
+
+
+### Image with zoom
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisi vel consectetur interdum, nisl nunc egestas nunc, vitae tincidunt nisl nunc euismod nunc. Sed euismod, nisi vel consectetur interdum, nisl nunc egestas nunc, vitae tincidunt nisl nunc euismod nunc.
+
+<ImageZoom
+  id="home-image"
+  className="my-0! rounded-xl bg-fd-background"
+  src="/images/hero.jpeg"
+  alt="Next.js logo"
+  height={630}
+  width={1200}
+/>
+
+### Folder view
+
+<Files>
+  <Folder name="app" defaultOpen>
+    <File name="layout.tsx" />
+    <File name="page.tsx" />
+    <File name="global.css" />
+  </Folder>
+  <Folder name="components">
+    <File name="button.tsx" />
+    <File name="tabs.tsx" />
+    <File name="dialog.tsx" />
+  </Folder>
+  <File name="package.json" />
+</Files>
+
+Praesent maximus, ex id lacinia ultricies, nunc nunc ultricies nunc, vitae tincidunt nisl nunc euismod nunc. Donec euismod, nisi vel consectetur interdum, nisl nunc egestas nunc, vitae tincidunt nisl nunc euismod nunc. Sed euismod, nisi vel consectetur interdum, nisl nunc egestas nunc, vitae tincidunt nisl nunc euismod nunc.
+
+### Package install tabs
+
+```package-install
+npm install next -D
+```
+
+### Code blocks
+
+```js title="config.js"
+const number = 1;
+const string = "Hello World";
+const boolean = true;
+// [!code word:'John']
+const array = [1, 2, 3]; // [!code highlight]
+const object = {
+  name: "John",
+  age: 30,
+};
+```
+
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Nulla porttitor accumsan tincidunt. Curabitur aliquet quam id dui posuere blandit. Cras ultricies ligula sed magna dictum porta.
+
+### Text
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisi vel consectetur interdum, nisl nunc egestas nunc, vitae tincidunt nisl nunc euismod nunc. Sed euismod, nisi vel consectetur interdum, nisl nunc egestas nunc, vitae tincidunt nisl nunc euismod nunc.
+
+### Code with tabs
+
+<Tabs items={["Tab 1", "Tab 2"]}>
+
+```ts tab="Tab 1"
+const number = 1;
+const string = "Hello World";
+const boolean = true;
+```
+
+```ts tab="Tab 2"
+const array = [1, 2, 3]; // [!code highlight]
+const object = {
+  name: "John",
+  age: 30,
+};
+```
+
+</Tabs>
+
+Praesent maximus, ex id lacinia ultricies, nunc nunc ultricies nunc, vitae tincidunt nisl nunc euismod nunc. Donec euismod, nisi vel consectetur interdum, nisl nunc egestas nunc, vitae tincidunt nisl nunc euismod nunc. Sed euismod, nisi vel consectetur interdum, nisl nunc egestas nunc, vitae tincidunt nisl nunc euismod nunc.
+
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Nulla porttitor accumsan tincidunt. Curabitur aliquet quam id dui posuere blandit. Cras ultricies ligula sed magna dictum porta.
+
+### Callouts
+
+<Callout title="Hello World" />
+
+<Callout title="Hello World" type="warn" />
+
+<Callout title="Hello World" type="error" />
+
+### Accordion
+
+An accordion component is perfect for displaying a list of items that can be expanded or collapsed. It can be used to display a list of questions and answers, a list of items, or a list of sections.
+
+<Accordions type="single">
+  <Accordion title="Lorem ipsum dolor sit amet">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisi vel consectetur interdum, nisl nunc egestas nunc, vitae tincidunt nisl nunc euismod nunc. Sed euismod, nisi vel consectetur interdum, nisl nunc egestas nunc.
+  </Accordion>
+
+{" "}
+
+<Accordion title="Consectetur adipiscing elit">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisi
+  vel consectetur interdum, nisl nunc egestas nunc, vitae tincidunt nisl nunc
+  euismod nunc. Sed euismod, nisi vel consectetur interdum, nisl nunc egestas
+  nunc.
+</Accordion>
+
+{" "}
+
+<Accordion title="Nullam euismod, nisi vel consectetur">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisi
+  vel consectetur interdum, nisl nunc egestas nunc, vitae tincidunt nisl nunc
+  euismod nunc. Sed euismod, nisi vel consectetur interdum, nisl nunc egestas
+  nunc.
+</Accordion>
+
+</Accordions>

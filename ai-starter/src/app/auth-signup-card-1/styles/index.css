@@ -1,0 +1,5 @@
+/* Custom styles for Auth Signup Card 1 */
+
+.signup-image {
+  @apply absolute inset-0 h-full w-full object-cover dark:brightness-[0.2] dark:grayscale;
+}

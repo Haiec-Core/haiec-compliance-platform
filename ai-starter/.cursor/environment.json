@@ -1,0 +1,10 @@
+{
+  "snapshot": "snapshot-20250520-444a8589-9a9a-4b5f-9e56-d1699934ed4b",
+  "install": "pnpm install",
+  "terminals": [
+    {
+      "name": "Nextjs dev server",
+      "command": "pnpm dev"
+    }
+  ]
+}

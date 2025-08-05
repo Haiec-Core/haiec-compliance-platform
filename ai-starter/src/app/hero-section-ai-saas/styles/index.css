@@ -1,0 +1,5 @@
+/* Custom styles for Hero Section AI SaaS */
+
+.hero-solid {
+  @apply bg-background;
+}

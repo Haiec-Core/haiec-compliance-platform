@@ -1,0 +1,4 @@
+/* Custom styles for Hero Section 1 */
+.hero-image {
+  @apply rounded-md border border-muted shadow-md transition-transform;
+}

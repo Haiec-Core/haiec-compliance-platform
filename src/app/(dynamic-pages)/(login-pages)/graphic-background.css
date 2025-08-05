@@ -1,0 +1,46 @@
+.graphic-background {
+  background:
+    conic-gradient(
+        at 62.5% 12.5%,
+        theme("colors.muted.DEFAULT") 25%,
+        transparent 0
+      )
+      calc(32px / -8) calc(32px / 2),
+    conic-gradient(
+        at 62.5% 12.5%,
+        theme("colors.muted.DEFAULT") 25%,
+        transparent 0
+      )
+      calc(-3 * 32px / 8) calc(32px / 4),
+    conic-gradient(
+        at 87.5% 62.5%,
+        theme("colors.muted.DEFAULT") 25%,
+        transparent 0
+      )
+      calc(3 * 32px / 8) calc(32px / 4),
+    conic-gradient(
+        at 87.5% 62.5%,
+        theme("colors.muted.DEFAULT") 25%,
+        transparent 0
+      )
+      calc(32px / -8) 0,
+    conic-gradient(
+        at 25% 12.5%,
+        theme("colors.muted.DEFAULT") 25%,
+        transparent 0
+      )
+      0 calc(32px / -4),
+    conic-gradient(
+        at 25% 12.5%,
+        theme("colors.muted.DEFAULT") 25%,
+        transparent 0
+      )
+      calc(32px / -4) 0,
+    conic-gradient(
+        at 87.5% 87.5%,
+        theme("colors.muted.DEFAULT") 25%,
+        transparent 0
+      )
+      calc(32px / 8) 0 theme("colors.background");
+  background-size: 32px 32px;
+}

@@ -1,0 +1,4 @@
+/* Custom styles for Testimonial Carousel */
+.testimonial-card {
+  @apply bg-background text-foreground rounded-md border border-muted p-6 shadow-sm;
+}
