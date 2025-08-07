@@ -89,7 +89,7 @@ export function NewLoginPage() {
               Already have an account?
             </Link>
             <Link href="#" className="block" prefetch={false}>
-              Forgot password?
+              Forgot pass?
             </Link>
           </div>
         </Card>

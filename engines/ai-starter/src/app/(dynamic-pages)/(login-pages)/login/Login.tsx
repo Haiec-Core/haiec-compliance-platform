@@ -132,7 +132,7 @@ export function Login({
           Forgot password?
         </Link>
         <Link href="/sign-up" className="text-sm text-blue-600 hover:underline">
-          Sign up instead
+          Sign 
         </Link>
       </CardFooter>
     </Card>
